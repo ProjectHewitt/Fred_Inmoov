@@ -49,9 +49,8 @@ EnableRaspberryPi = True   # True for on, False for off
 # it will be "COM3" or "COM15". In either case you will need
 # to determine what port your computer has it connected to.
 # Arduino's can also act as Servo Drivers.
-EnableArduinoLeft = True # True for on, False for off
-#ArduinoLeftComPort = "/dev/ttyACM0" # Refer to notes above
-ArduinoLeftComPort = "COM1" # Refer to notes above
+EnableArduinoLeft = False  # True for on, False for off
+ArduinoLeftComPort = "/dev/ttyUSB1" # Refer to notes above
 
 EnableArduinoRight = False # True for on, False for off
 ArduinoRightComPort = "/dev/ttyUSB2" # Refer to notes above
@@ -59,7 +58,7 @@ ArduinoRightComPort = "/dev/ttyUSB2" # Refer to notes above
 # In the Fred build, I'm using an Arduino Nano for the two 
 # Ultrasonic Sensors and the PIR sensor.
 # The Arduino also has an I2C Port 0 if we need to use it.
-EnableArduinoNano = False # True for on, False for off
+EnableArduinoNano = True  # True for on, False for off
 ArduinoNanoComPort = "/dev/ttyUSB0" # Refer to notes above
 
 EnableArduinoNano2 = False  # True for on, False for off
@@ -103,9 +102,9 @@ ArduinoNano2ComPort = "/dev/ttyUSB1" # Refer to notes above
 EnableAdafruit16CServoDriverHead = True # True or False
 HeadServoDriverAddr = "0x40"            # Refer to notes above
 HeadServoDriverPort = "1"               # Refer to notes above
-HeadServoDriverAttached = "arduinoLeft"       # Refer to notes above
+HeadServoDriverAttached = "raspi"       # Refer to notes above
 
-EnableAdafruit16CServoDriverBack = False # True or False
+EnableAdafruit16CServoDriverBack = True # True or False
 BackServoDriverAddr = "0x41"            # Refer to notes above
 BackServoDriverPort = "1"               # Refer to notes above
 BackServoDriverAttached = "raspi"       # Refer to notes above

@@ -53,9 +53,9 @@ EnableJawServo = True # True or False
 JawAttachment = "Head"          # "arduinoLeft"
 # The controller will have a number of pis, this is the pin 
 # this servo is connected to.
-JawPin = 2                      # 26
+JawPin = 9                      # 26
 # The is the value from testing where the Jaw is all the way closed.
-JawMinPos = 75                  # 10
+JawMinPos = 70                  # 10
 # This is the value from testing where the jaw is all the way open
 JawMaxPos = 140                 # 25
 # This is the speed that the moves at. -1 is no speed limit,
@@ -71,22 +71,22 @@ JawVelocity = -1                #
 # The Right Eye X-Axis (Left / Right motion)
 EnableRightEyeX = True
 RightEyeXAttachment = "Head"    # "arduinoLeft"
-RightEyeXPin = 6               # 22
-RightEyeXMinPos = 75             # 60
-RightEyeXMaxPos = 170           # 120
+RightEyeXPin = 15               # 22
+RightEyeXMinPos = 0             # 60
+RightEyeXMaxPos = 180           # 120
 RightEyeXVelocity = -1          #
 
 # The Right Eye Y-Axis (Up / Down Motion)
 EnableRightEyeY = True
 RightEyeYAttachment = "Head"    # "arduinoLeft"
-RightEyeYPin = 4               # 24
-RightEyeYMinPos = 70             # 60
-RightEyeYMaxPos = 175           # 120
+RightEyeYPin = 14               # 24
+RightEyeYMinPos = 0             # 60
+RightEyeYMaxPos = 180           # 120
 RightEyeYVelocity = -1          #
 
 # The Left Eye X-Axis (Left / Right motion)
 # The Advance Eye Mech by Dakota76 has servos for both eyes.
-EnableLeftEyeX = False
+EnableLeftEyeX = True
 LeftEyeXAttachment = "Head"     # Not Present
 LeftEyeXPin = 13                #
 LeftEyeXMinPos = 0              #
@@ -94,7 +94,7 @@ LeftEyeXMaxPos = 180            #
 LeftEyeXVelocity = -1           #
 
 # The Left Eye Y-Axis (Up / Down Motion)
-EnableLeftEyeY = False
+EnableLeftEyeY = True
 LeftEyeYAttachment = "Head"     # Not Present
 LeftEyeYPin = 12                #
 LeftEyeYMinPos = 180            #
@@ -102,7 +102,7 @@ LeftEyeYMaxPos = 0              #
 LeftEyeYVelocity = -1           #
 
 # The Right Upper Eye Lid
-EnableRightUpperEyeLid = False
+EnableRightUpperEyeLid = True
 UpperREyeLidAttachment = "Head" # "arduinoRight"
 UpperREyeLidPin = 11            # 13
 UpperREyeLidMinPos = 150        # 60
@@ -112,7 +112,7 @@ UpperREyeLidVelocity = -1       #
 # The Right Lower Eye Lid
 # The Advance Eye Mech by Dakota76 has both upper
 # and lower Eye Lids controlled a single servo each.
-EnableRightLowerEyeLid = False
+EnableRightLowerEyeLid = True
 LowerREyeLidAttachment = "Head" # Not Present
 LowerREyeLidPin = 10            #
 LowerREyeLidMinPos = 0          #

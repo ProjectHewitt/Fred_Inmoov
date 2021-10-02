@@ -31,8 +31,8 @@ print "Creating the Servo Neck Config"
 # in Fred's modified version its a JX PDI6221MG.
 EnableHeadYaw = True
 HeadYawAttachment = "Head"      # "arduinoLeft"
-HeadYawPin = 0                  # 13
-HeadYawMinPos = 75               # 30
+HeadYawPin = 8                  # 13
+HeadYawMinPos = 0               # 30
 HeadYawMaxPos = 180             # 150
 HeadYawMaxSpeed = 30            # -1
 
@@ -42,12 +42,11 @@ HeadYawMaxSpeed = 30            # -1
 # version this is a HS805BB servo, in Fred I used a Servo 
 # Adapter and fitted a JX PDI6221MG servo.
 EnableHeadPitch = True
-HeadPitchAttachment = "Head"    # "arduinoLeft"
-HeadPitchPin = 10                # 12
-HeadPitchMinPos = 35          # 20
-HeadPitchMaxPos = 180             # 160
+HeadPitchAttachment = "Back"    # "arduinoLeft"
+HeadPitchPin = 7                # 12
+HeadPitchMinPos = 180           # 20
+HeadPitchMaxPos = 0             # 160
 HeadPitchMaxSpeed = 30          # -1
-HeadPitchRestPos = 95           # -1
 
 # In the original version, this servo did not exist. 
 # The roll neck allows the neck plate to roll left and right
@@ -58,9 +57,9 @@ HeadPitchRestPos = 95           # -1
 # this to eliminate its major weaknes and has included it in
 # the Official parts list. This is still an optional update.
 EnableHeadRoll = True
-HeadRollAttachment = "Head"     # "arduinoRight"
-HeadRollPin = 8                 # 13
-HeadRollMinPos = 20             # 60
-HeadRollMaxPos = 160            # 130
+HeadRollAttachment = "Back"     # "arduinoRight"
+HeadRollPin = 6                 # 13
+HeadRollMinPos = 30             # 60
+HeadRollMaxPos = 180            # 130
 HeadRollMaxSpeed = 30           # -1
 

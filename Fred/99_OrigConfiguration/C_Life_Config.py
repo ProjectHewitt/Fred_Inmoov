@@ -47,7 +47,7 @@ TorsoType = False
 # RandBlinkMinTime and RandBlinkMaxTime time intervals.
 # The Blinking feature can be very anoying, 
 # so the option to turn it of is here.
-EnableBlinking = False # Set to True or False
+EnableBlinking = True           # Set to True or False
 # Minimum time between blinks
 RandBlinkMinTime = 5000         # int milliSeconds
 # Maximum time between blinks
@@ -64,7 +64,7 @@ RandBlinkMaxTime = 10000        # int milliSeconds
 # those movements, if enabled. 
 # If servos to move the eyes are not installed, the function
 # will still run, but will affect the whole of the head.
-EnableRandomEyeMovements = True    # Set to True or False
+EnableRandomEyeMovements = True # Set to True or False
 # Min time between movements
 RandEyeMovementsMinTime = 1000  # int miliSeconds
 # Max time between movements

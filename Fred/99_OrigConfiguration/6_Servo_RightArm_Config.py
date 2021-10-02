@@ -12,45 +12,45 @@
 # Fred in a modified Inmmov robot, you can find all the      #
 # origonal files on the Inmoov web site. http://inmoov.fr/   #
 #                                                            #
-# 7.Servo_LeftArm_Config.py                                  #
-# This is where the configuration settings for the Left      #
+# 6_Servo_RightArm_Config.py                                 #
+# This is where the configuration settings for the Right     #
 # Arm Servos are located.                                    #
 #                                                            #
 ##############################################################
-print "Creating the Servo Left Arm Config"
+print "Creating the Servo Right Arm Config"
 
-# The Left OmoPlate lifts the arm at the shoulder out away
+# The Right OmoPlate lifts the arm at the shoulder out away
 # from the body, this servo is located into the torso cavity
 # and drives a rotary Piston setup in the Official InMoov Build.
-EnableLeftOmoPlate = False
-LeftOmoPlateAttachment = "Back" # "arduioLeft"
-LeftOmoPlatePin = 15            # 11
-LeftOmoPlateMinPos = 0          # 10
-LeftOmoPlateMaxPos = 180        # 80
-LeftOmoPlateMaxSpeed = 120      # 
+EnableRightOmoPlate = True
+RightOmoPlateAttachment = "Back"# "arduionRight"
+RightOmoPlatePin = 0            # 11
+RightOmoPlateMinPos = 62        # 10
+RightOmoPlateMaxPos = 119       # 80
+RightOmoPlateMaxSpeed = 60      # 
 
-# The left shoulder is a worm drive setup the pitches the
-# left arm up in a forward direction.
-EnableLeftShoulder = False
-LeftShoulderAttachment = "Back" # "arduioLeft"
-LeftShoulderPin = 14            # 10
-LeftShoulderMinPos = 0          # 0
-LeftShoulderMaxPos = 180        # 180
-LeftShoulderMaxSpeed = 120      # 
+# The right shoulder is a worm drive setup the pitches the
+# right arm up in a forward direction.
+EnableRightShoulder = True
+RightShoulderAttachment="Back"  # "arduionRight"
+RightShoulderPin = 1            # 10
+RightShoulderMinPos = 55        # 0
+RightShoulderMaxPos = 180       # 180
+RightShoulderMaxSpeed = 60      # 
 
 # This servo is located near the shoulder servo and rotates
 # the arm
-EnableLeftRotate = False
-LeftRotateAttachment = "Back"   # "arduioLeft"
-LeftRotatePin = 13              # 9
-LeftRotateMinPos = 0            # 40
-LeftRotateMaxPin = 180          # 180
-LeftRotateMaxSpeed = 120        # 
+EnableRightRotate = True
+RightRotateAttachment = "Back"  # "arduionRight"
+RightRotatePin = 2              # 9
+RightRotateMinPos = 0           # 40
+RightRotateMaxPos = 180         # 180
+RightRotateMaxSpeed = 60        # 
 
 # This servo is located in the bicep and operates the elbow.
-EnableLeftBicep = False
-LeftBicepAttachment = "LeftArm" # "arduioLeft"
-LeftBicepPin = 1                # 8
-LeftBicepMinPos = 0             # 0
-LeftBicepMaxPos = 180           # 90
-LeftBicepMaxSpeed = 120         # 
+EnableRightBicep = False
+RightBicepAttachment ="RightArm"# "arduioRight"
+RightBicepPin = 1               # 8
+RightBicepMinPos = 0            # 0
+RightBicepMaxPos = 180          # 90
+RightBicepMaxSpeed = 120        # 

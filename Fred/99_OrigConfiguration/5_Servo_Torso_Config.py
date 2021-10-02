@@ -29,7 +29,7 @@ print "Creating the Servo Head Config"
 # electronics removed working as a slave to the other one.
 # these drive a pair of pistons to rotate the torso about
 # it's top stomach behind the neo pixel ring.
-EnableTopStomach = False
+EnableTopStomach = True
 TopStomachAttachment = "Back"    # "arduinoLeft"
 TopStomachPin = 8                # 27
 TopStomachMinPos = 80            # 60

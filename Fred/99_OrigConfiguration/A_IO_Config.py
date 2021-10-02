@@ -36,7 +36,7 @@ print "Creating the Input/Output Config"
 # another, there is a large change in the IR levels 
 # detected, when this change occurs the output of the PIR 
 # sensor is turned on.
-EnablePIR = False
+EnablePIR = True
 PirAttachment = "arduinoNano"               # "arduioLeft"
 PirPin = 2                                  # 23
 
@@ -63,12 +63,12 @@ PirPin = 2                                  # 23
 # From there it can do the math to get a distance.
 # Pin 1 is used for the Transmit of the pulse.
 # Pin 2 is used for the receive of the return pulse.
-EnableLeftUltrasonic = False #
+EnableLeftUltrasonic = True                 #
 LeftUltrasonicAttachment = "arduinoNano"    # "arduioLeft"
 LeftUltrasonicPin1 = 10                     # 64
 LeftUltrasonicPin2 = 9                      # 63
 
-EnableRightUltraSonic = False #
+EnableRightUltraSonic = True                #
 RightUltrasonicAttachment = "arduinoNano"   # "arduioRight"
 RightUltrasonicPin1 = 12                    # 64
 RightUltrasonicPin2 = 11                    # 63
@@ -97,7 +97,7 @@ PingTime = 1000
 # 33Vdc
 # To enable, the Enable Battery monitor must be set to a value
 # between 1 and 4, with each of the inputs defined below.
-EnableBatteryMonitor = 0
+EnableBatteryMonitor = 4
 BatteryMonitorAttachment = "arduinoNano"
 BatteryMonitorPin1 = "A0" # On the Arduino Nano, this = A0
 BatteryMonitorPin2 = "A1" # On the Arduino Nano, this = A1
@@ -114,7 +114,7 @@ BatteryMonitorPollInterval = 10000 # milli-seconds
 # data line, these can be cascaded allowing strings of
 # NeoPixels to be connected with each pixel being able to be
 # controlled.  This can make for some fantastic displays.
-EnableStomachNeoPixel = False
+EnableStomachNeoPixel = True
 StomachNeoPixelAttachment = "arduinoNano"   # This was attached to a secondary board
 StomachNeoPixelPin = 8                      # 2
 StomachNeoPixelNumber = 23                  # 16
@@ -138,12 +138,12 @@ HeadNeoPixelMode = 0                        #
 # The IMU we can use here is the MPU6050, a reasonably cheap 
 # I2C device that provides acelleration in 3 axis of the linear
 # direction as well as 3 axis of rotational motion.
-EnableMPU6050A = False # True or False
+EnableMPU6050A = True                   # True or False
 MPU6050AAttached = "raspi"
 MPU6050APort = "1"
 MPU6050AAddr = "0x68"
 
-EnableMPU6050B = False # True or False
+EnableMPU6050B = False                   # True or False
 MPU6050BAttached = "arduinoNano"
 MPU6050BPort = "0"
 MPU6050BAddr = "0x68"
@@ -164,4 +164,4 @@ IbuSerial = "Serial1"
 #                                                            #
 ##############################################################
 # Not yet available
-EnableJoyStick = True
+EnableJoyStick = False

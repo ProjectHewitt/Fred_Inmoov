@@ -40,4 +40,4 @@ RunWebGUI = True           # True for on, False for off
 # can be on another computer.  In this case we don't want to 
 # launch the local web browser.  The local web browser also 
 # uses a lot of computer power.
-RunWebGUIbrowser = True    # True for on, False for off
+RunWebGUIbrowser = False    # True for on, False for off
